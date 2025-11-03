@@ -54,7 +54,7 @@ Este proyecto implementa un sistema completo de gestión de archivos seguro desa
 
 #### 1. Clonar el Repositorio
 ```bash
-git clone <repository-url>
+git clone https://github.com/HeinerLandero/secure-storage.git
 cd secure-storage-app
 ```
 
@@ -96,7 +96,7 @@ DB_PASSWORD=tu_contraseña
 # Ejecutar migraciones
 php artisan migrate
 
-# (Opcional) Ejecutar seeders para datos de prueba
+# (Obligatorio) Ejecutar seeders para datos de prueba
 php artisan db:seed
 ```
 
@@ -240,13 +240,11 @@ secure-storage-app/
 
 ## Credenciales de Ejemplo
 
-### Usuario Administrador
-- **Email**: admin@example.com
-- **Contraseña**: password123
-
-### Usuario Regular
-- **Email**: user@example.com
-- **Contraseña**: password123
+admin@example.com     - password     (Admin)
+user@example.com      - password123  (Usuario)
+juan@example.com      - password123  (Usuario)
+maria@example.com     - password123  (Usuario)
+superadmin@example.com - password123  (Admin)
 
 ## Tecnologías Utilizadas
 
@@ -254,7 +252,6 @@ secure-storage-app/
 - **Frontend**: Blade Templates, TailwindCSS, Vanilla JavaScript
 - **Base de Datos**: MySQL 8.0
 - **Autenticación**: Laravel Breeze
-- **Storage**: Laravel Filesystem
 - **Validation**: Laravel Validation
 
 ## Decisiones de Diseño
