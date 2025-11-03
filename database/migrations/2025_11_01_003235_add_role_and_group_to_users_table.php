@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // Add foreign key constraint for group_id after groups table is created
+
         Schema::table('users', function (Blueprint $table) {
             $table->foreign('group_id')->references('id')->on('groups')->onDelete('set null');
         });

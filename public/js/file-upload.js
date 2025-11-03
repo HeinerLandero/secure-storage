@@ -1,7 +1,5 @@
-// JavaScript para carga de archivos
 console.log('Script de carga de archivos cargado');
 
-// Timestamp para evitar caché
 const scriptLoadTime = Date.now();
 console.log('Script cargado a las:', scriptLoadTime);
 
@@ -26,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // Verificar tamaño del archivo (límite 10MB)
         if (file.size > 10 * 1024 * 1024) {
             showStatus('El archivo es demasiado grande. Tamaño máximo: 10MB', 'error');
             return;
@@ -98,7 +95,6 @@ function deleteFile(fileId) {
     console.log('Eliminando archivo con ID:', fileId);
     console.log('URL de eliminación:', deleteUrl);
 
-    // Confirmar eliminación
     if (!confirm('¿Estás seguro de que deseas eliminar este archivo?')) {
         return;
     }

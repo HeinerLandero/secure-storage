@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('original_name', 255);
             $table->string('path', 255);
-            $table->bigInteger('size'); // File size in bytes
+            $table->bigInteger('size');
             $table->timestamps();
         });
     }

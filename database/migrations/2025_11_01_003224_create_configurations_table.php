@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('configurations', function (Blueprint $table) {
             $table->id();
-            $table->string('key', 100)->unique(); // Ej: 'cuota_global', 'extensiones_prohibidas'
-            $table->text('value'); // Ej: "10485760" o "exe,bat,js,php,sh"
+            $table->string('key', 100)->unique();
+            $table->text('value');
             $table->timestamps();
         });
     }
